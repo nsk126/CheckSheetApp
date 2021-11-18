@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Check Sheet</string>
+    
+    <string-array name="stations">
+
+        <item>Activation</item>
+        <item>Deluge</item>
+        <item>Dip Degrease</item>
+
+    </string-array>
 </resources>

@@ -48,7 +48,16 @@ class CodeScanner : AppCompatActivity() {
         codeScanner.decodeCallback = DecodeCallback {
             runOnUiThread {
 
-                Toast.makeText(this,it.text, Toast.LENGTH_SHORT).show()
+                when(it.text){
+
+                    "PT_ED_CHECKSHEET" -> {
+
+                        Toast.makeText(this,it.text, Toast.LENGTH_SHORT).show()
+                        val intent = Intent(this, com.example.checksheet.SelectCS::class.java)
+                        startActivity(intent)
+                    }
+                }
+
 
 
             }

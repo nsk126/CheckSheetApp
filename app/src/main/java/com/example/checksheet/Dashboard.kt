@@ -21,7 +21,7 @@ class Dashboard : AppCompatActivity() {
 
         buttonQR.setOnClickListener {
             Toast.makeText(this, "QR scanner", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, CodeScanner::class.java)
+            val intent = Intent(this, SelectCS::class.java)
             startActivity(intent)
         }
     }
